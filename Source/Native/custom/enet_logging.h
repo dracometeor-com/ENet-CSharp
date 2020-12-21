@@ -13,13 +13,13 @@ static FILE* enet_log_fp = NULL;
 
 enum enet_log_type
 {
-	ENET_LOG_TYPE_TRACE,
+	ENET_LOG_TYPE_TRACE = 0,
 	ENET_LOG_TYPE_ERROR,
 };
 
 static const char *const enet_log_type_names[] = {
-	[ENET_LOG_TYPE_TRACE] = "TRACE",
-	[ENET_LOG_TYPE_ERROR] = "ERROR",
+	"TRACE",
+	"ERROR",
 };
 
 #if ENET_DEBUG
